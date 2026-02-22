@@ -430,8 +430,32 @@
     </div>
 
     <aside id="osaka-contact">
+      <!-- Parte Visible del formulario llamativo -->
       <div id="visible-main">
         <h2>Cartas a Osaka</h2>
+      </div>
+
+      <!-- Parte Oculta del formulario -->
+      <div id="hidden-form">
+        <div id="contact-card">
+          <h3>Escribe una carta para Osaka</h3>
+          <p>Si quieres, puedes dejarle un mensaje a Osaka. Ella lo leerá con atención.</p>
+          <form>
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
       </div>
     </aside>
   </div>
