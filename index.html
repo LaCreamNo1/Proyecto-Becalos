@@ -33,14 +33,34 @@
       border-left: 10px solid #bc4768;
       box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
       z-index: 1000;
-
       /* Offset: Solo se ven 140px por defecto */
       transform: translateX(310px);
+      /* Para alinear el título vertical al lado del contenido y animacion*/
       transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-
       display: flex;
       flex-direction: row;
-      /* Para alinear el título vertical al lado del contenido */
+    }
+
+    #visible-main {
+      width: 140px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 50px;
+      cursor: pointer;
+      background-color: rgba(238, 91, 142, 0.1);
+    }
+
+    #visible-main>h2 {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      color: #8e0359;
+      font-size: 28px;
+      transform: rotate(180deg);
+      text-transform: uppercase;
+      letter-spacing: 4px;
     }
   </style>
 </head>
